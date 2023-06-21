@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Page settings -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Google font -->
+   <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet" />
+   <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet" />
+
+   <!-- Style -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- Swiper -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   <title>redaily</title>
+</head>
+
+<body>
+   <div class="btn-up btn-up_hide"></div>
+   <!-- button to top
+   <div class="sectioon"></div>
+   <div class="scroll-up">
+      <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+         <path
+               class="scroll-up__svg-path"
+               d="M24,0
+                  a24,24 0 0,1 0,48
+                  a24,24 0 0,1 0,-48"
+                  />
+      </svg>
+   </div> -->
+   <div class="modal">
+      <img src="img/modal/close.svg" alt="close" class="modal__close">
+      <img src="img/modal/modal.jpg" alt="" class="modal__img">
+      <div class="modal__content">
+         <img src="img/logo.svg" alt="logo" class="modal__logo">
+         <p class="modal__text">Sign-up for</p>
+         <p class="modal__discount">10% off</p>
+         <img src="img/modal/border.svg" alt="border" class="modal__border">
+         <form class="modal__form" method="post">
+            <input type="email" class="modal__input" placeholder="Enter your email here">
+            <button class="modal__button">GET 10% OFF</button>
+         </form>
+         <p class="modal__warning">By signing up you agree to Redaily’s Privacy Policy</p>
+      </div>
+   </div>
+
+   <!-- header -->
+   <header class="nav _wrapper">
+      <div class="nav__container _container">
+
+         <!-- Burger-menu -->
+         <button class="nav-toggle">
+            <span class="bar-top"></span>
+            <span class="bar-mid"></span>
+            <span class="bar-bot"></span>
+         </button>
+
+         <!-- Logo -->
+         <a href="#main" class="nav__logo-link">
+            <img src="img/logo.svg" alt="redaily" class="nav__logo-img">
+         </a>
+
+         <!-- Navigation -->
+         <div class="nav__burger">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="" class="nav__link">Our products</a></li>
+               <li class="nav__item"><a href="" class="nav__link">Our mission</a></li>
+               <li class="nav__item"><a href="" class="nav__link">How it works</a></li>
+               <li class="nav__item"><a href="" class="nav__link">About Us</a></li>
+               <li class="nav__item"><a href="" class="nav__link">FAQ</a></li>
+               <li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
+            </ul>
+            <div class="nav__language-block">
+               <select class="nav__select">
+                  <option class="nav__option" value="English" selected>English
+                  </option>
+                  <option class="nav__option" value="Italian">Italian</option>
+               </select>
+            </div>
+         </div>
+
+         <!-- Basket -->
+         <div class="nav__basket-block">
+            <img src="img/nav/basket.svg" alt="basket" class="nav__basket">
+            <div class="nav__basket-counter">
+               <span class="nav__counter">2</span>
+            </div>
+         </div>
+      </div>
+      <div class="nav_item" style="margin-top:18px"><span id="time">Date</span></div>
+   </header>
+
+   <!-- Mobile burger -->
+   <div class="burger">
+      <ul class="burger__list">
+         <li class="burger__item"><a href="" class="burger__link">Our products</a></li>
+         <li class="burger__item"><a href="" class="burger__link">Our mission</a></li>
+         <li class="burger__item"><a href="" class="burger__link">How it works</a></li>
+         <li class="burger__item"><a href="" class="burger__link">About Us</a></li>
+         <li class="burger__item"><a href="" class="burger__link">FAQ</a></li>
+         <li class="burger__item"><a href="" class="burger__link">Contacts</a></li>
+      </ul>
+      <div class="burger__language-block">
+         <select class="burger__select">
+            <option class="burger__option" value="English" selected>English
+            </option>
+            <option class="burger__option" value="Italian">Italian</option>
+         </select>
+      </div>
+      <div class="burger__social">
+         <p class="burger__social-text">We are also on social networks</p>
+         <div class="burger__img-block">
+            <a href="" class="burger__link">
+               <img src="img/social/twitter.svg" alt="twitter" class="burger__img">
+            </a>
+            <a href="" class="burger__link">
+               <img src="img/social/facebook.svg" alt="facebook" class="burger__img">
+            </a>
+            <a href="" class="burger__link">
+               <img src="img/social/instagram.svg" alt="instagram" class="burger__img">
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- Main -->
+   <main class="main _ibg">
+      <div class="main__container _container">
+         <h1 class="main__header">simple&nbsp;<b>habits</b> matter</h1>
+         <p class="main__description">We made eco friendliness easy and accessible.<br> With love and care, ReDaily.</p>
+         <a href="" class="main__link transformation">Try it</a>
+      </div>
+      <img src="img/main/background.jpg" alt="" class="main__img">
+      <img src="img/main/background-mobile.jpg" alt="" class="main__img main__img_mobile">
+   </main>
+
+   <!-- Our products -->
+   <section class="products _wrapper">
+      <div class="products__container _container">
+
+         <!-- Desctiption -->
+         <div class="products__description">
+            <h2 class="products__header">our <b>products</b></h2>
+            <p class="products__text-top">Personal Cares</p>
+            <p class="products__text-bottom">Choose a product that will make your day brighter. Are you looking for
+               Personal or Home care?</p>
+            <a href="" class="products__link products__link_desktop gradient">all products</a>
+         </div>
+
+         <!-- Items -->
+         <div class="products__items">
+            <a href="" class="product__link">
+               <div class="products__item">
+                  <img src="img/products/product.png" alt="product" class="products__img">
+                  <h3 class="products__name">DWEBERRY</h3>
+                  <p class="products__text">BODY WASH</p>
+                  <div class="products__price-block">
+                     <span class="products__price products__price_old">€10</span>
+                     <span class="products__price products__price_new">€5</span>
+                  </div>
+               </div>
+            </a>
+
+            <a href="" class="product__link">
+               <div class="products__item">
+                  <img src="img/products/product.png" alt="product" class="products__img">
+                  <h3 class="products__name">DWEBERRY</h3>
+                  <p class="products__text">BODY WASH</p>
+                  <div class="products__price-block">
+                     <span class="products__price products__price_old">€10</span>
+                     <span class="products__price products__price_new">€5</span>
+                  </div>
+               </div>
+            </a>
+
+            <a href="" class="product__link">
+               <div class="products__item">
+                  <img src="img/products/product.png" alt="product" class="products__img">
+                  <h3 class="products__name">DWEBERRY</h3>
+                  <p class="products__text">BODY WASH</p>
+                  <div class="products__price-block">
+                     <span class="products__price products__price_old">€10</span>
+                     <span class="products__price products__price_new">€5</span>
+                  </div>
+               </div>
+            </a>
+
+            <!-- 4 item -->
+            <div class="products__item products__item_mobile">
+               <img src="img/products/product.png" alt="product" class="products__img">
+               <h3 class="products__name">DWEBERRY</h3>
+               <p class="products__text">BODY WASH</p>
+               <div class="products__price-block">
+                  <span class="products__price products__price_old">€10</span>
+                  <span class="products__price products__price_new">€5</span>
+               </div>
+            </div>
+         </div>
+         <a href="" class="products__link products__link_mobile">all products</a>
+      </div>
+   </section>
+
+   <!-- How it works -->
+   <section class="works _wrapper">
+      <div class="works__container _container">
+
+         <h2 class="works__header">How it <b>works</b></h2>
+         <div class="works__scheme">
+            <div class="works__img-block works__img-block_one">
+               <img src="img/works/1.png" alt="" class="works__img works__img_one">
+               <p class="works__text">Fill the bottle with warm water</p>
+            </div>
+            <img src="img/works/arr-one.svg" alt="" class="works__arr works__arr_one">
+            <div class="works__img-block works__img-block_two">
+               <img src="img/works/2.png" alt="" class="works__img works__img_two">
+               <p class="works__text">Add the powdered formula refill</p>
+            </div>
+            <img src="img/works/arr-two.svg" alt="" class="works__arr works__arr_two">
+            <div class="works__img-block works__img-block_three">
+               <img src="img/works/3.png" alt="" class="works__img works__img_three">
+               <p class="works__text">Close the bottle and shakE it</p>
+            </div>
+            <img src="img/works/arr-three.svg" alt="" class="works__arr works__arr_three">
+            <div class="works__img-block works__img-block_four">
+               <img src="img/works/4.png" alt="" class="works__img works__img_four">
+               <p class="works__text">Your product is ready to use</p>
+            </div>
+         </div>
+
+         <div class="works__scheme_mobile">
+            <div class="works__img-block_mobile">
+               <img src="img/works/1.png" alt="" class="works__img_mobile works__img_mobile_one">
+               <p class="works__text_mobile">Fill the bottle with warm water</p>
+            </div>
+            <div class="works__img-block_mobile">
+               <img src="img/works/2.png" alt="" class="works__img_mobile works__img_mobile_two">
+               <p class="works__text_mobile">Add the powdered formula refill</p>
+            </div>
+            <div class="works__img-block_mobile">
+               <img src="img/works/3.png" alt="" class="works__img_mobile works__img_mobile_three">
+               <p class="works__text_mobile">Close the bottle and shakE it</p>
+            </div>
+            <div class="works__img-block_mobile">
+               <img src="img/works/4.png" alt="" class="works__img_mobile works__img_mobile_four">
+               <p class="works__text_mobile">Your product is ready to use</p>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- 100% RECYCLED features  & BIODEGRADABLE features  -->
+   <section class="features _wrapper">
+
+      <div class="features__content">
+         <div class="features__container features__container_one">
+            <img src="img/features/features.png" alt="100% RECYCLED features" class="trans features__img features__img_one">
+            <div class="features__description features__description_one">
+               <h2 class="features__header"><b>100% RECYCLED </b>features</h2>
+               <p class="features__text">We have analyzed over 50 different suppliers to ensure that our bottle is
+                  equally
+                  beneficial to your home as well as our planet.</p>
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <div><h2 class="reviews__header" style="margin-bottom:10px;">Bio<b>tens</b></h2></div>
+   <div id="videoPlayer">
+      <video id="video" src="img/video.mp4"></video>
+      <div id="controls">
+          <div class="video-track">
+              <div class="timeline"></div>
+          </div>
+          <div class="buttons">
+              <button class="play"><img alt="" src="img/play.svg" style="width:40px; height:40px;"></button>
+              <button class="pause"><img alt="" src="img/pause.svg" style="width:40px;height:40px;"></button>
+          </div>
+      </div>
+  </div>
+  <svg width="30%" height="30%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <defs></defs>
+   <path class="wave" d="" />
+</svg>
+   <div class="features__content features__content_yellow">
+      <div class="features__container features__container_two">
+         <div class="features__description features__description_two">
+            <h2 class="features__header"><b>BIODEGRADABLE</b> features</h2>
+            <p class="features__text">Each subsequent use of ReDaily products will leave no trace on the environment.
+            </p>
+         </div>
+         <img src="img/features/features-2.png" alt="BIODEGRADABLE features" class="features__img features__img_two img_opacity">
+      </div>
+   </div>
+   <!-- Helpinfo -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <script>
+   $(function () {
+     $('[data-toggle="tooltip"]').tooltip()
+   })
+   </script>
+   <!-- Why us -->
+   <section class="why-us _wrapper">
+
+      <!-- Header block -->
+      <div class="why-us__header-block">
+         <h2 class="why-us__header">Why <b>us</b></h2>
+      </div>
+
+      <!-- Cards list -->
+      <div class="why-us__items">
+         <div class="why-us__container">
+            <div class="why-us__content">
+               <div class="why-us__item item">
+                  <img src="img/why-us/1.png" alt="ENVIRONMENTALLY FRIENDLY" class="item__img item__img_one">
+                  <h3 class="item__header item__header_one">ENVIRONMENTALLY FRIENDLY</h3>
+                  <img src="img/why-us/border.png" alt="" class="item__border">
+                  <p class="item__text">Our approach to packaging helps to save up to 96% of potential plastic
+                     consumption per year, while pleasantly surprise you with its eco-friendly composition.</p>
+               </div>
+               <div class="why-us__item item">
+                  <img src="img/why-us/2.png" alt="ENVIRONMENTALLY FRIENDLY" class="item__img item__img_two">
+                  <h3 class="item__header item__header_two">FUNCTIONALITY</h3>
+                  <img src="img/why-us/border.png" alt="" class="item__border">
+                  <p class="item__text">The functionality of the products is no different from other products on the
+                     supermarket shelf. Preserving southing and moisturizing functions of hand wash, thickens hair
+                     effects of shampoo</p>
+               </div>
+               <div class="why-us__item item">
+                  <img src="img/why-us/3.png" alt="ENVIRONMENTALLY FRIENDLY" class="item__img item__img_three">
+                  <h3 class="item__header item__header_three">AVAILABILITY</h3>
+                  <img src="img/why-us/border.png" alt="" class="item__border">
+                  <p class="item__text">We are working hard to keep our prices as low as possible for you, be on the
+                     look out for our affordable prices at the stores near you.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <section>
+         <h2 class="reviews__header">Product <b>reviews</b></h2>
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><div class="reviews__item">
+               <img src="img/reviews/quotes.svg" alt="quotes" class="reviews__img">
+               <p class="reviews__text">Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Ut id
+                  nisl quis enim dignissim sagittis.</p>
+               <div class="reviews__author-block">
+                  <p class="reviews__firstname">Daria</p>
+                  <p class="reviews__secondname">TALLIN</p>
+               </div>
+            </div></div>
+              <div class="swiper-slide"><div class="reviews__item">
+               <img src="img/reviews/quotes.svg" alt="quotes" class="reviews__img">
+               <p class="reviews__text">Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Ut id
+                  nisl quis enim dignissim sagittis.</p>
+               <div class="reviews__author-block">
+                  <p class="reviews__firstname">Daria</p>
+                  <p class="reviews__secondname">TALLIN</p>
+               </div>
+            </div></div>
+              <div class="swiper-slide"><div class="reviews__item">
+               <img src="img/reviews/quotes.svg" alt="quotes" class="reviews__img">
+               <p class="reviews__text">Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Ut id
+                  nisl quis enim dignissim sagittis.</p>
+               <div class="reviews__author-block">
+                  <p class="reviews__firstname">Daria</p>
+                  <p class="reviews__secondname">TALLIN</p>
+               </div>
+            </div></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+         <!-- Reviews slider buttons block
+         <div class="reviews__buttons-block">
+            <div class="reviews__button-prev">
+               <img src="img/reviews/prev.svg" alt="prev" class="previews__arr">
+            </div>
+            <div class="reviews__button-next">
+               <img src="img/reviews/next.svg" alt="next" class="previews__arr">
+            </div>
+         </div> -->
+
+   </section>
+   <svg width="30%" height="30%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs></defs>
+      <path id="wave" class="wave" d="" />
+   </svg>
+   <!-- Find us on instagram -->
+   <section class="instagram _wrapper">
+      <div class="instagram__container _container">
+
+         <!-- description & socials -->
+         <div class="instagram__description">
+            <h2 class="instagram__header">Find us on <b>instagram</b></h2>
+            <div class="instagram__socials-block">
+               <a href="https://twitter.com/redailynews" data-placement="bottom" data-toggle="tooltip" title="Twitter" class="instagram__link">
+                  <img src="img/social/twitter.svg" alt="twitter" class="instagram__img">
+               </a>
+               <a href="https://www.facebook.com/redaily.eco/" data-placement="bottom" data-toggle="tooltip" title="Facebook" class="instagram__link">
+                  <img src="img/social/facebook.svg" alt="facebook" class="instagram__img">
+               </a>
+               <a href="https://www.instagram.com/redaily__/?hl=ru&ysclid=lj44cg6r3o295781644" data-placement="bottom" data-toggle="tooltip" title="Instagram" class="instagram__link">
+                  <img src="img/social/instagram.svg" alt="instagram" class="instagram__img">
+               </a>
+            </div>
+         </div>
+      
+         <!-- Photos slider-->
+         <div class="swiper instagram__slider">
+            <div class="swiper-wrapper">
+
+               <div class="swiper-slide">
+                  <img src="img/instagram/photo.jpg" alt="photo" class="instagram__photo">
+               </div>
+
+               <div class="swiper-slide">
+                  <img src="img/instagram/photo.jpg" alt="photo" class="instagram__photo">
+               </div>
+
+               <div class="swiper-slide">
+                  <img src="img/instagram/photo.jpg" alt="photo" class="instagram__photo">
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <!-- Contacts -->
+   <section class="contacts _wrapper">
+      <div class="contacts__container _container">
+
+         <!-- contacts description -->
+         <div class="contacts__description">
+            <h2 class="contacts__header contacts__header_desktop">Contacts</h2>
+            <h2 class="contacts__header contacts__header_mobile">Contacts us</h2>
+            <div class="contacts__text-block contacts__text-block_hard">
+               <img src="img/contacts/map1.svg" alt="" class="contacts__img contacts__img_map-one">
+               <img src="img/contacts/map2.svg" alt="" class="contacts__img contacts__img_map-two">
+               <a href="" class="contacts__link">Narva mnt. 7-634, Kesklinna linnaosa, 10117 Harju maakond, Tallinn,
+                  Estonia</a>
+            </div>
+            <div class="contacts__text-block">
+               <img src="img/contacts/mail.svg" alt="mail" class="contacts__img">
+               <a href="" class="contacts__link">feedback@redaily.net</a>
+            </div>
+            <div class="contacts__text-block">
+               <img src="img/contacts/phone.svg" alt="phone" class="contacts__img">
+               <a href="" class="contacts__link contacts__link_phone">+372 584 35143</a>
+            </div>
+         </div>
+
+         <!-- Contacts form -->
+         <form method="post" class="form">
+            <h3 class="form__header">Write to us</h3>
+            <input class="form__input" type="email" placeholder="your email">
+            <input class="form__input" type="text" placeholder="what is your name">
+            <input class="form__input" type="text" placeholder="your message">
+            <button class="form__button">SEND</button>
+         </form>
+
+
+      </div>
+   </section>
+   <div><h2 class="reviews__header" style="margin-bottom:10px;">You <b>can </b>find  <b>us </b>here</h2></div>
+   <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1167558.7871022476!2d28.303545944881773!3d53.66091660356405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1686818020931!5m2!1sru!2sby" width="1920" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+   <!-- SUBSCRIBE -->
+   <section class="subscribe _wrapper">
+      <div class="subscribe__container _container">
+         <h2 class="subscribe__header">SUBSCRIBE</h2>
+         <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <form class="subscribe__form" method="post">
+            <input type="email" class="subscribe__input" placeholder="Enter your email here">
+            <button class="subscribe__button shadow">SUBMIT</button>
+         </form>
+      </div>
+   </section>
+   <div class="aquarium">
+      <div class="aquarium__table"></div>
+      <div class="aquarium__aquarium">
+        <div class="aquarium__water"></div>
+        <div class="aquarium__bubble"></div>
+        <div class="aquarium__bubble"></div>
+        <div class="aquarium__bubble"></div>
+        <div class="aquarium__bubble"></div>
+        <div class="aquarium__bubble"></div>
+        <div class="aquarium__bubble"></div>
+        <div class="aquarium__bubble"></div>
+        <div class="aquarium__bubble"></div>
+      </div>
+      <div class="aquarium__drops">
+        <div class="aquarium__drop"></div>
+        <div class="aquarium__water-column"></div>
+        <div class="aquarium__splash"></div>
+        <div class="aquarium__splash"></div>
+      </div>
+      <div class="aquarium__sponge-box">
+        <div class="aquarium__body">
+          <div class="aquarium__body-stripe"></div>
+          <div class="aquarium__body-hole"></div>
+        </div>
+        <div class="aquarium__face">
+          <div class="aquarium__mouth"></div>
+          <div class="aquarium__smile"></div>
+        </div>
+      </div>
+    </div>
+
+   <!-- footer -->
+   <footer class="footer _wrapper">
+      <div class="footer__container _container">
+
+         <!-- footer top -->
+         <div class="footer__top">
+            <div class="footer__logo-block">
+               <img src="img/logo.svg" alt="redaily" class="footer__logo">
+            </div>
+
+            <div class="footer__nav">
+               <ul class="nav__list">
+                  <li class="nav__item"><a href=" " class="nav__link">Our products</a></li>
+                  <li class="nav__item"><a href="" class="nav__link">Our mission</a></li>
+                  <li class="nav__item"><a href="" class="nav__link">How it works</a></li>
+                  <li class="nav__item"><a href="" class="nav__link">About Us</a></li>
+                  <li class="nav__item"><a href="" class="nav__link">FAQ</a></li>
+                  <li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
+                  <li class="nav__item nav__item_mobile"><a href="" class="nav__link">Terms of Use</a></li>
+                  <li class="nav__item nav__item_mobile"><a href="" class="nav__link">Privacy Policy</a></li>
+               </ul>
+            </div>
+
+         </div>
+         <div class="btn-up btn-up_hide">
+            <svg class="btn-up-icon" role="img" aria-label="Прокрутить страницу к началу">
+              <use xlink:href="#arrow-up-short"></use>
+            </svg>
+          </div>`
+         <!-- footer bottom -->
+         <div class="footer__bottom">
+            <ul class="footer__info info">
+               <li class="info__item"><a href=" " class="info__link">@ copyright redaily 2022. All rights reserved</a>
+               </li>
+               <li class="info__item info__item_mobile"><a href="" class="info__link">Terms of Use</a></li>
+               <li class="info__item info__item_mobile"><a href="" class="info__link">Privacy Policy</a></li>
+               <li class="info__item info__item_mobile"><div>You're here for:</div><div id="timer">0:00</div></li>
+            </ul>
+            <div class="footer__social-block">
+               <a href="https://twitter.com/redailynews" class="footer__link">
+                  <img src="img/social/twitter.svg" alt="twitter" class="footer__img">
+               </a>
+               <a href="https://www.facebook.com/redaily.eco/" class="footer__link">
+                  <img src="img/social/facebook.svg" alt="facebook" class="footer__img">
+               </a>
+               <a href="https://www.instagram.com/redaily__/?hl=ru&ysclid=lj44cg6r3o295781644" class="footer__link">
+                  <img src="img/social/instagram.svg" alt="instagram" class="footer__img">
+               </a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Libs -->
+   <script src="libs/wavify/TweenMax.min.js"></script>
+   <script src="libs/wavify/wavify.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+   </script>
+   <!-- Script -->
+   <script src="js/script.js"></script>
+</body>
+
+</html>
